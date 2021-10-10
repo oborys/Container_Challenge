@@ -11,4 +11,3 @@ RUN apt-get clean
 
 WORKDIR app
 RUN pip install --user -r requirements.txt
-ENTRYPOINT uvicorn main:app --reload --host 0.0.0.0 --port 8080
